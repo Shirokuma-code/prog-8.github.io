@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+   <meta charset="UTF-8">
+		<link rel="stylesheet" href="top.css">
+		<title>BLue noise | 300冊以上のBLを読んできたエンジニアが贈る"BLライフエンジョイサイト"</title>
+	<meta name="description" content="BL好きのエンジニアが運営する【BLue noise】公式サイトです！“胸キュン”をダイレクトに刺激されるような作品情報をお届けします！"> 
+    <!-- Slick.jsのCSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+</head>
+<body>
+
+   <header>
+    <div class="container">
+        <!-- 画像をクリックでトップページに戻る -->
+        <a href="file:///C:/Users/%E6%B8%85%E6%B0%B4%E4%BD%B3%E8%8F%9C/Desktop/%E9%A4%85%E3%81%AE%E6%8C%87%E5%8D%97%E6%9B%B8/%E9%A4%85%E3%81%AE%E6%8C%87%E5%8D%97%E6%9B%B8top/top.html" class="logo">
+            <img src="C:\Users\清水佳菜\Desktop\餅の指南書\画像\ブルーノイズ＿ロゴ.png" alt="Manga Review Hub">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="file:///C:/Users/%E6%B8%85%E6%B0%B4%E4%BD%B3%E8%8F%9C/Desktop/%E9%A4%85%E3%81%AE%E6%8C%87%E5%8D%97%E6%9B%B8/%E9%A4%85%E3%81%AE%E6%8C%87%E5%8D%97%E6%9B%B8top/top.html">ホーム</a></li>
+                <li><a href="/reviews">レビュー一覧</a></li>
+                <li><a href="/categories">カテゴリー</a></li>
+                <li><a href="/search">検索</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <!-- メインコンテンツ -->
+    <main>
+        <main-content>
+            <!-- 人気の漫画セクション -->
+            <section class="popular-reviews">
+                <h2>  まずはこれ!初心者向けBL</h2>
+                <div class="slick-slider">
+                    <div class="review-card">
+                        <img src="C:\Users\清水佳菜\Desktop\餅の指南書\画像\みなと商事91MfZ4JKmwL._UF1000,1000_QL80_.png" alt="漫画1">
+                        <div class="review-details">
+                            <h3>みなと商事コインランドリー</h3>
+                            <p>ひたすら癒されたい人必見！スパダリ年下×元社畜童顔アラサー
+                                スパダリ年下にひたすら翻弄される。宇宙一誠実な愛がここにある。</p>
+                            <a href="/reviews/1" class="btn">詳細を見る</a>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <img src="C:\Users\清水佳菜\Desktop\餅の指南書\画像\カラーレシピ4edf8dc1-799b-4089-bdd6-c296443f315e.jpg" alt="漫画2">
+                        <div class="review-details">
+                            <h3>カラーレシピ</h3>
+                            <p>簡単な紹介文...</p>
+                            <a href="/reviews/2" class="btn">詳細を見る</a>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <img src="manga3.jpg" alt="漫画3">
+                        <div class="review-details">
+                            <h3>漫画タイトル 3</h3>
+                            <p>簡単な紹介文...</p>
+                            <a href="/reviews/3" class="btn">詳細を見る</a>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <img src="image4.jpg" alt="漫画4">
+                            <h3>漫画タイトル4</h3>
+                            <p>レビュー内容4</p>
+                    </div>
+                    <div class="review-card">
+                        <img src="image5.jpg" alt="漫画5">
+                        <h3>漫画タイトル5</h3>
+                        <p>レビュー内容5</p>
+                    </div>
+                    <div class="review-card">
+                        <img src="image6.jpg" alt="漫画6">
+                        <h3>漫画タイトル6</h3>
+                        <p>レビュー内容6</p>
+                    </div>
+                    <div class="review-card">
+                        <img src="image7.jpg" alt="漫画7">
+                        <h3>漫画タイトル7</h3>
+                        <p>レビュー内容7</p>
+                    </div>
+                    <div class="review-card">
+                        <img src="image8.jpg" alt="漫画8">
+                        <h3>漫画タイトル8</h3>
+                        <p>レビュー内容8</p>
+                    </div>
+                    <div class="review-card">
+                        <img src="image9.jpg" alt="漫画9">
+                        <h3>漫画タイトル9</h3>
+                        <p>レビュー内容9</p>
+                    </div>
+                </div>
+            </section>
+        </main-content>
+        
+                    
+                <!-- Slick.jsとjQueryのJSファイル -->
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+                <script>
+                    $(document).ready(function(){
+                        $('.slick-slider').slick({
+                            infinite: true,           // 無限スクロール
+                            slidesToShow: 3,          // 一度に表示するカード数（3冊）
+                            slidesToScroll: 1,        // 1冊ずつスクロール
+                            autoplay: true,           // 自動スクロール
+                            autoplaySpeed: 3000,      // 3秒ごとに自動スクロール
+                            arrows: true,             // 前後の矢印を表示
+                            dots: true,               // ドットナビゲーション
+                            fade: true, 
+                            responsive: [
+                                {
+                                    breakpoint: 1024, // タブレット以上の画面で3つ表示
+                                    settings: {
+                                        slidesToShow: 2,    // タブレットで2冊表示
+                                        slidesToScroll: 1
+                                    }
+                                },
+                                {
+                                    breakpoint: 768,    // モバイル用設定
+                                    settings: {
+                                        slidesToShow: 1,    // モバイルで1冊表示
+                                        slidesToScroll: 1
+                                    }
+                                }
+                            ]
+                        });
+                    });
+
+               
+            
+   
+    </script>
+
+        <!-- サイドバー -->
+        <aside class="sidebar">
+            <h3>検索</h3>
+            <input type="text" placeholder="漫画名を検索">
+            <h3>カテゴリー</h3>
+            <ul>
+                <li><a href="/category/shounen">少年漫画</a></li>
+                <li><a href="/category/shoujo">少女漫画</a></li>
+                <li><a href="/category/seinen">青年漫画</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <!-- フッター -->
+    <footer>
+        <p>&copy; 2025 BLue noise</p>
+    </footer>
+</body>
+</html>
