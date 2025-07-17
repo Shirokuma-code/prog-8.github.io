@@ -1,0 +1,291 @@
+/* 基本設定 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "游ゴシック", Yu Gothic, "ヒラギノ丸ゴ Pro W4", "Hiragino Maru Gothic Pro", sans-serif;
+    background-color: #f9f9f9; /* 明るいグレー背景 */
+    color: #333; /* テキスト色 */
+    line-height: 1.6;
+}
+
+/* コンテナの中央揃え */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+}
+
+.main-container{
+    display: flex;
+    height: 100vh;
+}
+
+/* ヘッダー */
+header {
+    background-color: #ffffff; /* ホワイト */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* ほんのり影をつけて清潔感 */
+    padding: 20px 0;
+}
+
+header .logo img {
+    width: 150px; /* 画像のサイズを指定 */
+    height: auto; /* 高さは自動で調整 */
+    display: block; /* 画像をブロック要素として表示 */
+    margin: 0 auto; /* 画像を中央に配置 */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    margin-top: 10px; /* メニューと画像の間にスペース */
+}
+
+nav a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-size: 1rem;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ecf0f1; /* 薄いグレーでホバー効果 */
+    border-radius: 5px;
+}
+
+
+/* メインコンテンツ */
+.main {
+    display: flex;
+    gap: 20px;
+    max-width: 100%;
+    margin-top: 20px;
+    height: 100%;
+    padding-bottom: 20px;
+}
+
+.main-content {
+  flex: 3;
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  overflow-y: hidden;
+}
+
+/* 人気の漫画セクション */
+.popular-reviews {
+    margin-bottom: 100px;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.popular-reviews h2 {
+    font-size: 1.8rem;
+    color: #d7aac6;
+    margin-bottom: 20px;
+}
+
+/* スライダーの設定 */
+.slick-slider {
+    max-width: 100%;            /* 親要素の幅を100%に */
+    width: 100%;                /* スライダーの幅を100%に */
+    min-height: 100%;
+    margin: 0 ;             /* 中央に配置 */
+    padding: 0 20px;            /* スライダー内の左右の余白 */
+}
+
+/* 各カードのスタイル */
+.slick-slider .review-card {
+    max-width: 500px;           /* 各カードの最大幅を700pxに設定 */
+    width: 100%;                /* 幅を100%にして親要素に合わせる */
+    margin: 0px;             /* カード間の間隔 */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+}
+
+/* 画像の最大幅を調整 */
+.slick-slider img {
+    width: 100%;                /* 画像の幅をカードに合わせる */
+    max-width: 350px;           /* 画像の最大幅を350pxに設定 */
+    height: auto;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .slick-slider .review-card {
+        max-width: 100%;         /* モバイル用にカードの最大幅を100%に */
+        margin: 0 5px;           /* カード間隔を5pxに */
+    }
+
+    .slick-slider img {
+        max-width: 150px;        /* モバイルで画像の最大幅を150pxに */
+    }
+}
+
+@media (max-width: 1024px) {
+    .slick-slider .review-card {
+        max-width: 600px;         /* タブレット用にカードの最大幅を600pxに */
+    }
+}
+
+
+.slick-slider .review-details {
+    margin-top: 15px;
+}
+
+.slick-slider .btn {
+    text-decoration: none;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+.slick-slider .btn:hover {
+    background-color: #2980b9;
+}
+
+/* ナビゲーション矢印 */
+.slick-prev, .slick-next {
+    background-color: #3498db;
+    border-radius: 50%;
+    color: white;
+    font-size: 18px;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    z-index: 1;
+}
+
+/* ドットナビゲーション */
+.slick-dots li button {
+    background-color: #3498db;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #2980b9;
+}
+
+
+.review-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.review-card img {
+    width: 120px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.review-details {
+    flex: 1;
+}
+
+.review-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.review-details p {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+}
+
+.review-details .btn {
+    text-decoration: none;
+    background-color: #ed9e5e; /* アクセントカラー */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.review-details .btn:hover {
+    background-color: #2980b9; /* ボタンホバー時 */
+}
+
+/* サイドバー */
+.sidebar {
+    flex: 1;
+    width: 100%;
+    overflow-y: auto;
+    background-color: rgb(243, 245, 248);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #3498db;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #2980b9;
+}
+
+/* フッター */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #7f8c8d;
+    border-top: 1px solid #ddd;
+}
